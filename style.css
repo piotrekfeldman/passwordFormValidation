@@ -1,0 +1,63 @@
+form {
+    margin: auto;
+    width: 80%;
+    padding:5px;
+  }
+
+  .form-floating{
+      margin-top: 50px;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .container {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  #message{
+    display:none;
+    color: #000;
+    position: relative;
+    margin-top: 5px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+
+  #messageConfirmPassword{
+    display:none;
+    color: #000;
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  #messageConfirmPassword p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+
+  .invalid {
+    color: red;
+    margin-bottom: -5px;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+  } 
