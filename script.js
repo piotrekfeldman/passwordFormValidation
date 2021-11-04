@@ -22,6 +22,18 @@ firstPassword.onkeyup = function() {
         document.querySelector('#letter').style.display = "block";
         letter.classList.add("invalid");
   }
+
+
+var specialCharacters = /[\!\@\#\$\%\^\&\*\)\(\+\=\.\<\>\{\}\[\]\:\;\'\"\|\~\`\_\-]/g
+
+  if(firstPassword.value.match(specialCharacters)) {
+    character.classList.remove("invalid");
+    document.querySelector('#character').style.display = "none";
+} else {
+    document.querySelector('#character').style.display = "block";
+    character.classList.add("invalid");
+}
+
     var upperCaseLetters = /[A-Z]/g;
     if(firstPassword.value.match(upperCaseLetters)) {
 
@@ -44,12 +56,12 @@ firstPassword.onkeyup = function() {
     }
 
     if(firstPassword.value.length >= 8) {
-    length1.classList.remove("invalid");
-    document.querySelector('#length1').style.display = "none";
+      passwordLength.classList.remove("invalid");
+    document.querySelector('#passwordLength').style.display = "none";
 
   } else {
-    document.querySelector('#length1').style.display = "block";
-    length1.classList.add("invalid");
+    document.querySelector('#passwordLength').style.display = "block";
+    passwordLength.classList.add("invalid");
   }
 
   if(firstPassword.value.length >= 8 && (firstPassword.value.match(numbers)) && (firstPassword.value.match(upperCaseLetters)) 
